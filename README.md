@@ -37,6 +37,20 @@ go build ./
 
   https://hanwen.home.xs4all.nl/public/software/go-mtpfs/
 
+### Building on macOS
+```shell
+brew install macfuse go libusb pkg-config
+
+git clone https://github.com/hanwen/go-mtpfs
+
+cd go-mtpfs
+
+go get -u; go mod tidy
+
+go build ./
+
+sudo cp ./go-mtpfs /usr/local/bin/go-mtpfs
+```
 
 ### USAGE
 ```
